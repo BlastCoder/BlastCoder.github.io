@@ -442,3 +442,42 @@
       grid-template-columns: 18px 1fr;
     }
   }
+
+  /* Project grid layout */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: start;
+  }
+  
+  /* Card body spacing */
+  .card-body {
+    padding: 1.6rem 1.4rem;
+  }
+  
+  /* Card footer */
+  .card-footer {
+    padding: 1rem 1.4rem;
+    border-top: 1px solid var(--border-subtle);
+  }
+  
+  /* Tag list */
+  .tag-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 1rem 0 0;
+    padding: 0;
+  }
+  
+  .tag-list li {
+    background: var(--accent-soft);
+    border: 1px solid var(--accent-strong);
+    padding: 0.25rem 0.65rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    color: var(--accent);
+  }
+  
