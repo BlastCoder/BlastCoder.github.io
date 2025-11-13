@@ -480,4 +480,67 @@
     font-size: 0.8rem;
     color: var(--accent);
   }
+
+  
+/* =====================
+   RESEARCH (TIMELINE)
+   ===================== */
+   .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .timeline-item {
+    background: var(--card-bg);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-soft);
+    padding: 1.6rem 1.4rem;     /* ← missing */
+  }
+  
+  .timeline-item h3 {
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+    font-size: 1.25rem;
+  }
+  
+  .timeline-meta {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-bottom: 0.8rem;
+    display: block;
+  }
+  
+  .timeline-item p {
+    line-height: 1.6;
+    color: var(--muted);
+  }
+
+/* =====================
+   ACHIEVEMENTS
+   ===================== */
+   .achievement-grid {
+    display: grid;
+    gap: 2rem;
+  }
+  
+  .achievement-card {
+    background: var(--card-bg);
+    padding: 1.6rem 1.4rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-subtle);
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .achievement-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+  }
+  
+  .achievement-card ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    color: var(--muted);
+  }
   
