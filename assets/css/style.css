@@ -277,9 +277,108 @@
   
   /* Pills ---------------------------------------------------------------------- */
   
-  .pill-list li {
+.pill-list li {
     background: rgba(0, 0, 0, 0.05);
     border: 1px solid var(--border-subtle);
+  }
+
+  .education-layout {
+    align-items: start;
+  }
+
+  .education-card {
+    background: var(--card-bg);
+    padding: 1.6rem 1.4rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-subtle);
+    box-shadow: var(--shadow-soft);
+  }
+
+  .education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .education-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  .education-degree {
+    margin: 0.35rem 0 0;
+    color: var(--muted);
+    font-size: 0.98rem;
+  }
+
+  .education-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    border: 1px solid var(--accent-strong);
+    color: var(--accent);
+    font-size: 0.82rem;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .education-details {
+    margin: 1rem 0 0;
+    padding-left: 1.2rem;
+    color: var(--muted);
+    line-height: 1.65;
+  }
+
+  .education-details li + li {
+    margin-top: 0.5rem;
+  }
+
+  .pill-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .education-side {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .education-panel {
+    background: var(--card-bg);
+    padding: 1.2rem 1.15rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-subtle);
+    box-shadow: var(--shadow-soft);
+  }
+
+  .education-panel h3 {
+    margin-top: 0;
+    margin-bottom: 0.9rem;
+  }
+
+  .education-honors {
+    margin: 0;
+    padding-left: 1.2rem;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  .education-honors li + li {
+    margin-top: 0.45rem;
+  }
+
+  @media (max-width: 600px) {
+    .education-header {
+      flex-direction: column;
+    }
   }
   
   /* Cards ---------------------------------------------------------------------- */
@@ -519,9 +618,82 @@
     display: block;
   }
   
-  .timeline-item p {
+.timeline-item p {
     line-height: 1.6;
     color: var(--muted);
+  }
+
+/* =====================
+   PUBLICATIONS
+   ===================== */
+  .publication-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .publication-card {
+    background: var(--card-bg);
+    padding: 1.6rem 1.4rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-subtle);
+    box-shadow: var(--shadow-soft);
+  }
+
+  .publication-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .publication-status {
+    margin: 0 0 0.45rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.72rem;
+    color: var(--accent);
+  }
+
+  .publication-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  .publication-year {
+    color: var(--muted);
+    font-size: 0.95rem;
+    white-space: nowrap;
+  }
+
+  .publication-meta {
+    margin: 0.85rem 0 0.45rem;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+
+  .publication-summary {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  .publication-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--accent);
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .publication-link:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 600px) {
+    .publication-header {
+      flex-direction: column;
+    }
   }
 
 /* =====================

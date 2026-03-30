@@ -23,10 +23,11 @@
           <span></span>
         </button>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#research">Research</a></li>
+          <li><a href="#publications">Publications</a></li>
           <li><a href="#achievements">Achievements</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -44,10 +45,9 @@
           <h1>Hi, I'm <span class="accent">Krish</span>.</h1>
           <p class="hero-subtitle">
             I'm an undergraduate at Carnegie Mellon studying Computer Science & Machine Learning.
-            I am excited about the intersection of real-world startup products and deep learning 
-            architectures for vision and robotics. Currently I am working on autoregressive world
-            model vision predictive architectures, and Transformer adaptive models for molecular
-            representations. Interested in machine learning research and quantitative finance.
+            I am excited about the intersection of real-world startup products and multimodal
+            dexterity learning for vision and robotics. Interested in alternative transformer
+            techniques, world model vision architectures, and quantitative research/trading.
           </p>
           <div class="hero-actions">
             <a href="#projects" class="btn primary">View Projects</a>
@@ -60,50 +60,62 @@
             <ul>
               <li><strong>School:</strong> Carnegie Mellon University</li>
               <li><strong>Major:</strong> Computer Science</li>
-              <li><strong>Minor:</strong> Machine Learning</li>
-              <li><strong>ML Focus:</strong> LLM, RL, Robotics, NLP </li>
-              <li><strong>Math Focus:</strong> Probability, NT, Combo </li>
+              <li><strong>ML Focus:</strong> Computer Vision, Robotics, Diffusion, NLP, Multimodal Learning, Knowledge Distillation</li>
+              <li><strong>Math Focus:</strong> Probability, NT, Combinatorics, Optimization, Game Theory, QT </li>
             </ul>
           </div>
         </div>
+
 
       </div>
     </section>
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="section">
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="section">
       <div class="container">
         <div class="section-header">
-          <h2>About</h2>
-          <p>Who I am and what I like to build.</p>
+          <h2>Education</h2>
         </div>
 
-        <div class="grid two-col">
-          <div>
-            <p>
-              I enjoy designing systems that are both mathematically grounded and practically useful.
-              A lot of my work lives in the overlap of deep learning, optimization, and quantitative trading.
-            </p>
-            <p>
-              I've worked on autonomous vehicle planning, generative models for drug discovery, vision-language 
-              systems, autoregressive world models, tokenization schemes, probabilistic diffusion models, and
-              applied ML tooling. Outside of research, I like building products that people will actually use.
-            </p>
-          </div>
+        <div class="grid two-col education-layout">
+          <article class="education-card">
+            <div class="education-header">
+              <div>
+                <h3>Carnegie Mellon University</h3>
+                <p class="education-degree">B.S. in Computer Science</p>
+              </div>
+              <span class="education-badge">Undergraduate</span>
+            </div>
 
-          <div>
-            <h3>Areas I work in</h3>
-            <ul class="pill-list">
-              <li>Deep Learning</li>
-              <li>Computer Vision</li>
-              <li>Robotic & Diffusions</li>
-              <li>NLP & LLMs</li>
-              <li>Tokenization</li>
-              <li>Reinforcement Learning</li>
-              <li>Algorithms & Optimization</li>
-              <li>Probability</li>
-              <li>Combinatorics</li>
+            <ul class="education-details">
+              <li><strong>Concentration:</strong> Machine Learning</li>
+              <li><strong>Minors:</strong> Mathematics, Robotics</li>
+              <li><strong>Primary interests:</strong> Deep learning, quantitative modeling, and systems for vision, language, and robotics</li>
             </ul>
+          </article>
+
+          <div class="education-side">
+            <article class="education-panel">
+              <h3>Relevant Coursework</h3>
+              <ul class="tag-list">
+                <li>Algorithms</li>
+                <li>Probability Theory</li>
+                <li>Combinatorics</li>
+                <li>Optimization</li>
+                <li>Machine Learning</li>
+                <li>Computer Vision</li>
+                <li>Natural Language Processing</li>
+              </ul>
+            </article>
+
+            <article class="education-panel">
+              <h3>Honors</h3>
+              <ul class="education-honors">
+                <li>USAMO National Qualifier</li>
+                <li>USNCO National Qualifier</li>
+                <li>ARML Top 25 National Ranking</li>
+              </ul>
+            </article>
           </div>
         </div>
       </div>
@@ -383,6 +395,43 @@
       
             
       
+          </div>
+        </div>
+      </section>
+
+      <section id="publications" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Publications</h2>
+            <p>Selected papers.</p>
+          </div>
+
+          <div class="publication-list">
+            <article class="publication-card">
+              <div class="publication-header">
+                <div>
+                  <p class="publication-status">Published</p>
+                  <h3>Optimizing SMILES token sequences via trie-based refinement and transition graph filtering</h3>
+                </div>
+                <span class="publication-year">2025</span>
+              </div>
+              <p class="publication-meta">
+                Sridhar Radhakrishnan, Krish Mody, et al.
+              </p>
+              <p class="publication-summary">
+                Introduced a tokenization method for molecular string representations that improved
+                compression ratio and entropy over prior approaches while boosting downstream
+                clustering accuracy.
+              </p>
+              <a
+                href="https://pubmed.ncbi.nlm.nih.gov/41484928/"
+                target="_blank"
+                rel="noopener"
+                class="publication-link"
+              >
+                View publication
+              </a>
+            </article>
           </div>
         </div>
       </section>
