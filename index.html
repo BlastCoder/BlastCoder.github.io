@@ -46,8 +46,9 @@
           <p class="hero-subtitle">
             I'm an undergraduate at Carnegie Mellon studying Computer Science & Machine Learning.
             I am excited about the intersection of real-world startup products and multimodal
-            dexterity learning for vision and robotics. Interested in alternative transformer
-            techniques, world model vision architectures, and quantitative research/trading.
+            learning for vision and robotics. Interested in alternative transformer techniques, 
+            world model vision architectures, ML systems architecture, and high frequency 
+            quantitative research/trading.
           </p>
           <div class="hero-actions">
             <a href="#projects" class="btn primary">View Projects</a>
@@ -60,8 +61,7 @@
             <ul>
               <li><strong>School:</strong> Carnegie Mellon University</li>
               <li><strong>Major:</strong> Computer Science</li>
-              <li><strong>ML Focus:</strong> Computer Vision, Robotics, Diffusion, NLP, Multimodal Learning, Knowledge Distillation</li>
-              <li><strong>Math Focus:</strong> Probability, NT, Combinatorics, Optimization, Game Theory, QT </li>
+              <li><strong>ML Focus:</strong> Computer Vision, Robotics, LLMs, ML Systems, RL</li>
             </ul>
           </div>
         </div>
@@ -96,13 +96,12 @@
             <div class="education-subsection">
               <h4>Relevant Coursework</h4>
               <ul class="education-honors">
+                <li>Generative AI (PhD)</li>
                 <li>Deep Learning (PhD)</li>
                 <li>Machine Learning (Masters)</li>
-                <li>Machine Learning Systems (Masters)</li>
+                <li>ML Systems (Masters)</li>
                 <li>Probability</li>
                 <li>Algorithms</li>
-                <li>Vector Calculus</li>
-                <li>Linear Algebra</li>
                 <li>Discrete Math</li>
               </ul>
             </div>
@@ -147,7 +146,7 @@
                 <li>Conducting research under Professor Chenyan Xiong to design vision-language models for predictive vision analysis.</li>
                 <li>Designed autoregressive world models to isolate state-transition probabilities for next-frame forecasting, achieving 98% accuracy via CLS fine-tuning.</li>
                 <li>Optimized multi-headed vision-language models via SFT, achieving 92% accuracy.</li>
-                <li>Built contrastive learning models for similarity analysis.</li>
+                <li>Built novel contrastive learning framework for vision similarity via soft-label spatiotemporal embeddings, achieving 85% recall accuracy</li>
               </ul>
             </div>
           </div>
@@ -192,12 +191,8 @@
               <ul class="exp-desc">
                 <li>Conducting research under Professor Sridhar Radhakrishnan to natural language processing
                 algorithms for generative drug discovery.</li> 
-                <li>Designed novel domain-aware NLP tokenization algorithm using entropy-guided graph filtering 
-                for molecular representations.</li>
-                <li>Improved downstream unsupervised learning by 50% compared to SOTA with 50% compression 
-                improvement.</li>
-                <li>Developing Transformer architecture with novel position encoding scheme to improve subtree
-                attribution for toxicity performance.</li>
+                <li>Designed domain-aware NLP tokenization algorithm, improving downstream unsupervised learning tasks by 50% over SOTA</li>
+                <li>Developing structure-aware Transformer architectures for serialized graph LMs.</li>
               </ul>
             </div>
           </div>
@@ -228,6 +223,119 @@
         </div>
       </div>
     </section>
+
+          <section id="research" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Research</h2>
+            <p>Research directions and work in progress.</p>
+          </div>
+      
+          <div class="timeline">
+      
+
+            <!-- Research Item 2 -->
+            <article class="timeline-item">
+              <h3>Traversal-Invariant Sequence Transformers for Causal Substructure Attribution</h3>
+              <p class="timeline-meta">Transformers · Graph LMs · Generative Modeling</p>
+              <p>
+                Developed Transformer architecture to fix traversal stability in serialized graphs,
+                achieving 99% embedding stability. Designed a causal substructure attribution method 
+                to advance model interpretability.
+              </p>
+            </article>
+
+
+
+
+            <!-- Research Item 3 -->
+            <article class="timeline-item">
+              <h3>Generative World Models for Multi-Agent Dynamics</h3>
+              <p class="timeline-meta">Computer Vision · RL · World Models</p>
+              <p>
+                Built generative world models to forecast multi-agent trajectories using next-frame
+                vision, achieving 90% simulation accuracy. Designed contrastive learning framework,
+                achieving 85% recall in multi-agent behavioral similarity classification
+              </p>
+            </article>
+
+                        <!-- Research Item 1 -->
+            <article class="timeline-item">
+              <h3>Entropy-Guided NLP Tokenization Algorithms for Molecular Representations</h3>
+              <p class="timeline-meta">Machine Learning · Generative Modeling</p>
+              <p>
+                Working with Professor Sridhar Radhakrishnan on natural language processing algorithms
+                for generative drug discovery. Co-authored a paper on a novel string tokenization method
+                for molecular representations. Achieved 50% improvement in compression ratio and entropy
+                over SOTA (APE), and improved downstream clustering accuracy by 30%.
+
+                <a href="https://pubmed.ncbi.nlm.nih.gov/41484928/" target="_blank" class="timeline-link"> Link to Paper </a>
+              </p>
+            </article>
+      
+
+            <!-- Research Item 4 -->
+            <article class="timeline-item">
+              <h3>Autonomous Racing & Trajectory Optimization</h3>
+              <p class="timeline-meta">Reinforcement Learning · Control · Optimization</p>
+              <p>
+                Developing global race-line planners and robust control policies for autonomous racing.
+                Focusing on efficient search over trajectories in high-speed, high-uncertainty domains.
+              </p>
+            </article>
+
+                        <!-- Research Item 2 -->
+            <article class="timeline-item">
+              <h3>Hybrid Transformer Adaptive Architecture for Generative Drug Discovery</h3>
+              <p class="timeline-meta">Machine Learning · Large Language Models · Generative Modeling</p>
+              <p>
+                Leading team to design hybrid Transformer-style adaptive architecture for generative
+                models built on small molecular representations for supervised diffused predictions
+              </p>
+            </article>
+      
+            
+      
+          </div>
+        </div>
+      </section>
+
+      <section id="publications" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Publications</h2>
+            <p>Selected papers.</p>
+          </div>
+
+          <div class="publication-list">
+            <article class="publication-card">
+              <div class="publication-header">
+                <div>
+                  <p class="publication-status">Published</p>
+                  <h3>Optimizing SMILES token sequences via trie-based refinement and transition graph filtering</h3>
+                </div>
+                <span class="publication-year">2025</span>
+              </div>
+              <p class="publication-meta">
+                Sridhar Radhakrishnan, Krish Mody, et al.
+              </p>
+              <p class="publication-summary">
+                Designed new tokenization method for molecular representations utilizing entropy-guided graph
+                filtering, improving compression ratio over SOTA while boosting downstream clustering accuracy
+              </p>
+              <a
+                href="https://pubmed.ncbi.nlm.nih.gov/41484928/"
+                target="_blank"
+                rel="noopener"
+                class="publication-link"
+              >
+                View publication
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
 
     <section id="projects" class="section alt">
         <div class="container">
@@ -335,105 +443,6 @@
       
       
 
-      <section id="research" class="section">
-        <div class="container">
-          <div class="section-header">
-            <h2>Research</h2>
-            <p>Research directions and work in progress.</p>
-          </div>
-      
-          <div class="timeline">
-      
-            <!-- Research Item 1 -->
-            <article class="timeline-item">
-              <h3>Generative Models for Drug Discovery</h3>
-              <p class="timeline-meta">Machine Learning · Generative Modeling</p>
-              <p>
-                Working with Professor Sridhar Radhakrishnan on natural language processing algorithms
-                for generative drug discovery. Co-authored a paper on a novel string tokenization method
-                for molecular representations. Achieved 50% improvement in compression ratio and entropy
-                over SOTA (APE), and improved downstream clustering accuracy by 30%.
-
-                <a href="https://pubmed.ncbi.nlm.nih.gov/41484928/" target="_blank" class="timeline-link"> Link to Paper </a>
-              </p>
-            </article>
-
-            <!-- Research Item 2 -->
-            <article class="timeline-item">
-              <h3>Hybrid Transformer Adaptive Architecture for Generative Drug Discovery</h3>
-              <p class="timeline-meta">Machine Learning · Large Language Models · Generative Modeling</p>
-              <p>
-                Leading team to design hybrid Transformer-style adaptive architecture for generative
-                models built on small molecular representations for supervised diffused predictions
-              </p>
-            </article>
-
-
-            <!-- Research Item 3 -->
-            <article class="timeline-item">
-              <h3>Supervised Vision-Language Models for NFL Spatiotemporal Representation</h3>
-              <p class="timeline-meta">Computer Vision · NLP · LLMs</p>
-              <p>
-                Designing Vision-Language architecture via RL and SFT techniques to optimize
-                autoregressive world models and isolate state-transition probabilities for 
-                next-frame forecasting. Building contrastive learning models for similarity
-                analysis under former Microsoft Researcher Professor Chenyan Xiong.
-              </p>
-            </article>
-      
-
-            <!-- Research Item 4 -->
-            <article class="timeline-item">
-              <h3>Autonomous Racing & Trajectory Optimization</h3>
-              <p class="timeline-meta">Reinforcement Learning · Control · Optimization</p>
-              <p>
-                Developing global race-line planners and robust control policies for autonomous racing.
-                Focusing on efficient search over trajectories in high-speed, high-uncertainty domains.
-              </p>
-            </article>
-      
-            
-      
-          </div>
-        </div>
-      </section>
-
-      <section id="publications" class="section">
-        <div class="container">
-          <div class="section-header">
-            <h2>Publications</h2>
-            <p>Selected papers.</p>
-          </div>
-
-          <div class="publication-list">
-            <article class="publication-card">
-              <div class="publication-header">
-                <div>
-                  <p class="publication-status">Published</p>
-                  <h3>Optimizing SMILES token sequences via trie-based refinement and transition graph filtering</h3>
-                </div>
-                <span class="publication-year">2025</span>
-              </div>
-              <p class="publication-meta">
-                Sridhar Radhakrishnan, Krish Mody, et al.
-              </p>
-              <p class="publication-summary">
-                Introduced a tokenization method for molecular string representations that improved
-                compression ratio and entropy over prior approaches while boosting downstream
-                clustering accuracy.
-              </p>
-              <a
-                href="https://pubmed.ncbi.nlm.nih.gov/41484928/"
-                target="_blank"
-                rel="noopener"
-                class="publication-link"
-              >
-                View publication
-              </a>
-            </article>
-          </div>
-        </div>
-      </section>
     
       <section id="achievements" class="section alt">
         <div class="container">
