@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Research | Krish Mody</title>
+  <meta name="description" content="Research directions and work in progress for Krish Mody." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">KM</a>
+
+      <nav class="nav">
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="education.html">Education</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="research.html" class="active">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="achievements.html">Achievements</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section page-section">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Research</p>
+          <h1>Research</h1>
+          <p>Research directions and work in progress.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <h3>Traversal-Invariant Sequence Transformers for Causal Substructure Attribution</h3>
+            <p class="timeline-meta">Transformers · Graph LMs · Generative Modeling</p>
+            <p>
+              Developed Transformer architecture to fix traversal stability in serialized graphs,
+              achieving 99% embedding stability. Designed a causal substructure attribution method
+              to advance model interpretability.
+            </p>
+          </article>
+
+          <article class="timeline-item">
+            <h3>Generative World Models for Multi-Agent Dynamics</h3>
+            <p class="timeline-meta">Computer Vision · RL · World Models</p>
+            <p>
+              Built generative world models to forecast multi-agent trajectories using next-frame
+              vision, achieving 90% simulation accuracy. Designed contrastive learning framework,
+              achieving 85% recall in multi-agent behavioral similarity classification.
+            </p>
+          </article>
+
+          <article class="timeline-item">
+            <h3>Entropy-Guided NLP Tokenization Algorithms for Molecular Representations</h3>
+            <p class="timeline-meta">Machine Learning · Generative Modeling</p>
+            <p>
+              Working with Professor Sridhar Radhakrishnan on natural language processing algorithms
+              for generative drug discovery. Co-authored a paper on a novel string tokenization method
+              for molecular representations. Achieved 50% improvement in compression ratio and entropy
+              over SOTA (APE), and improved downstream clustering accuracy by 30%.
+            </p>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/41484928/" target="_blank" rel="noopener" class="timeline-link">Link to Paper</a>
+          </article>
+
+          <article class="timeline-item">
+            <h3>Autonomous Racing & Trajectory Optimization</h3>
+            <p class="timeline-meta">Reinforcement Learning · Control · Optimization</p>
+            <p>
+              Developing global race-line planners and robust control policies for autonomous racing.
+              Focusing on efficient search over trajectories in high-speed, high-uncertainty domains.
+            </p>
+          </article>
+
+          <article class="timeline-item">
+            <h3>Hybrid Transformer Adaptive Architecture for Generative Drug Discovery</h3>
+            <p class="timeline-meta">Machine Learning · Large Language Models · Generative Modeling</p>
+            <p>
+              Leading team to design hybrid Transformer-style adaptive architecture for generative
+              models built on small molecular representations for supervised diffused predictions.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; <span id="year"></span> Krish Mody. All rights reserved.</span>
+      <span class="footer-meta">Built with focus on clarity, not clutter.</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
