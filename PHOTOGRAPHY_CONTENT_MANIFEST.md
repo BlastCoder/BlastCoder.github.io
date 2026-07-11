@@ -148,13 +148,22 @@ optimized web assets during Phase 3.
 ```text
 assets/images/photography/
   <series-slug>/
+    cover-800.webp
     cover-1600.webp
+    cover-2400.webp
+    cover-800.jpg
+    cover-1600.jpg
+    cover-2400.jpg
     01-800.webp
     01-1600.webp
     01-2400.webp
+    01-800.jpg
+    01-1600.jpg
+    01-2400.jpg
     ...
 ```
 
-Phase 3 will determine exact exported dimensions and formats from the approved
-images, preserve aspect ratios, add intrinsic dimensions, and wire responsive
-sources into the pages.
+Phase 3 export completed: every cover and gallery image has 800px, 1600px, and
+2400px WebP variants plus JPEG fallbacks. The exports preserve orientation,
+avoid enlarging smaller originals, include intrinsic dimensions in the page
+markup, and are referenced with `srcset` and `sizes`.
