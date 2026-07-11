@@ -65,7 +65,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  min-height: min(48vw, 41rem);
+  min-height: 0;
   padding-bottom: clamp(3.75rem, 8vw, 7rem);
 }
 
@@ -79,7 +79,7 @@
 }
 
 .photo-nameplate {
-  margin: auto 0 0;
+  margin: 0;
   color: var(--photo-text);
   font-family: "Arial Black", "Inter", system-ui, sans-serif;
   font-size: clamp(3.6rem, 9vw, 8.5rem);
@@ -219,37 +219,9 @@
   background: var(--photo-surface);
 }
 
-.photo-series-pagination {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-top: clamp(3.5rem, 8vw, 7rem);
-  padding-top: 1.25rem;
-  border-top: 1px solid var(--photo-border);
-}
-
-.photo-series-pagination a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  color: var(--photo-text);
-  font-size: clamp(1rem, 1.4vw, 1.2rem);
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.photo-series-pagination a:hover {
-  color: var(--photo-accent);
-}
-
-.photo-series-pagination a:last-child {
-  margin-left: auto;
-  text-align: right;
-}
-
 @media (max-width: 980px) {
   .photo-intro {
-    min-height: min(55vw, 32rem);
+    min-height: 0;
   }
 
   .series-grid {
@@ -263,7 +235,7 @@
   }
 
   .photo-intro {
-    min-height: 25rem;
+    min-height: 0;
     padding-bottom: 3.5rem;
   }
 
