@@ -8,21 +8,37 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-inner">
-      <a href="#top" class="logo">KM</a>
+    <div class="container site-header-inner">
+      <div class="identity-row">
+        <a href="#top" class="site-identity">
+          <span class="site-name">Krish Mody</span>
+          <span class="site-context">Career</span>
+        </a>
 
-      <nav class="nav">
-        <button class="nav-toggle" aria-label="Toggle navigation">
+        <nav class="mode-switch" aria-label="Portfolio mode">
+          <a href="index.html" class="mode-link" aria-current="page">Career</a>
+          <a href="photography.html" class="mode-link">Photography</a>
+        </nav>
+      </div>
+
+      <nav class="section-nav" aria-label="Career sections">
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle career sections"
+          aria-expanded="false"
+          aria-controls="career-section-links"
+        >
           <span></span>
           <span></span>
         </button>
-        <ul class="nav-links">
+        <ul class="nav-links" id="career-section-links">
           <li><a href="#education">Education</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
