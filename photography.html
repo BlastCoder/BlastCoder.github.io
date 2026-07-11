@@ -11,8 +11,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/photography.css" />
 </head>
-<body>
+<body class="photography-page">
   <header class="site-header">
     <div class="container site-header-inner">
       <div class="identity-row">
@@ -36,28 +37,70 @@
   </header>
 
   <main id="top">
-    <section id="work" class="hero">
-      <div class="container">
-        <p class="eyebrow">Photography</p>
-        <h1>Selected work.</h1>
-        <p class="hero-subtitle">
-          A collection of travel, city, landscape, and night photography by Krish Mody.
-        </p>
+    <section id="work" class="photo-index" aria-labelledby="photo-nameplate">
+      <div class="photo-shell">
+        <div class="photo-intro">
+          <p class="photo-kicker">Photography / Selected work</p>
+          <h1 id="photo-nameplate" class="photo-nameplate">Krish<br />Mody</h1>
+        </div>
 
-        <div class="card-grid" aria-label="Photography series placeholders">
-          <article class="card">
-            <div class="card-body">
-              <h2>Photography series</h2>
-              <p class="card-text">Series previews will appear here in the next phase.</p>
-            </div>
+        <div class="series-grid">
+          <article class="photo-series">
+            <img src="assets/images/photography/alaska/cover-1600.jpg" width="1600" height="1200" alt="" fetchpriority="high" decoding="async" />
+            <h2>Alaska</h2>
+          </article>
+
+          <article class="photo-series">
+            <img src="assets/images/photography/canada/cover-1600.jpg" width="1600" height="1200" alt="" loading="lazy" decoding="async" />
+            <h2>Canada</h2>
+          </article>
+
+          <article class="photo-series">
+            <img src="assets/images/photography/cities/cover-1600.jpg" width="1600" height="1200" alt="" loading="lazy" decoding="async" />
+            <h2>Cities</h2>
+          </article>
+
+          <article class="photo-series">
+            <img src="assets/images/photography/iceland/cover-1600.jpg" width="1600" height="1067" alt="" loading="lazy" decoding="async" />
+            <h2>Iceland</h2>
+          </article>
+
+          <article class="photo-series">
+            <img src="assets/images/photography/night/cover-1600.jpg" width="1600" height="1200" alt="" loading="lazy" decoding="async" />
+            <h2>Night</h2>
+          </article>
+
+          <article class="photo-series">
+            <img src="assets/images/photography/sf/cover-1600.jpg" width="1600" height="1200" alt="" loading="lazy" decoding="async" />
+            <h2>SF</h2>
+          </article>
+
+          <article class="photo-series">
+            <img src="assets/images/photography/seattle/cover-1600.jpg" width="1550" height="1600" alt="" loading="lazy" decoding="async" />
+            <h2>Seattle</h2>
+          </article>
+
+          <article class="photo-series">
+            <img src="assets/images/photography/sunsets/cover-1600.jpg" width="1600" height="1195" alt="" loading="lazy" decoding="async" />
+            <h2>Sunsets</h2>
+          </article>
+
+          <article class="photo-series">
+            <img src="assets/images/photography/waterfalls/cover-1600.jpg" width="1600" height="1200" alt="" loading="lazy" decoding="async" />
+            <h2>Waterfalls</h2>
+          </article>
+
+          <article class="photo-series">
+            <img src="assets/images/photography/yellowstone/cover-1600.jpg" width="1600" height="1200" alt="" loading="lazy" decoding="async" />
+            <h2>Yellowstone</h2>
           </article>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
+  <footer class="site-footer photo-footer">
+    <div class="photo-shell footer-inner">
       <span>&copy; <span id="year"></span> Krish Mody. All rights reserved.</span>
       <span class="footer-meta">Images may not be licensed or reproduced without written permission.</span>
     </div>
