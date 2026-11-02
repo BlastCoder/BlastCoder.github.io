@@ -1,0 +1,129 @@
+:root {
+  color-scheme: light;
+  --career-ink: #202124;
+  --career-muted: #666970;
+  --career-blue: #2563eb;
+  --career-border: #e9e9ec;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--career-ink);
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: inherit; text-decoration: none; }
+a:hover { color: var(--career-blue); }
+a:focus-visible { outline: 2px solid var(--career-blue); outline-offset: 5px; border-radius: 2px; }
+[hidden] { display: none !important; }
+.career-frame { width: min(1120px, calc(100% - 80px)); margin-inline: auto; }
+.skip-link { position: fixed; top: 12px; left: 12px; z-index: 100; padding: 12px 18px; background: white; transform: translateY(-160%); }
+.skip-link:focus { transform: translateY(0); }
+
+.career-header { position: sticky; top: 0; z-index: 20; background: rgba(255, 255, 255, .96); border-bottom: 1px solid var(--career-border); }
+.header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 62px; gap: 24px; }
+.career-name { font-size: 14px; font-weight: 600; letter-spacing: -.025em; }
+.portfolio-modes { display: flex; gap: 26px; font-size: 13px; }
+.portfolio-modes a { display: inline-flex; min-height: 44px; align-items: center; gap: 6px; color: var(--career-muted); }
+.portfolio-modes a[aria-current] { color: var(--career-ink); font-weight: 600; }
+.portfolio-modes a:hover { color: var(--career-blue); }
+.career-banner { height: 210px; background: linear-gradient(90deg, rgba(12, 24, 32, .12), rgba(12, 24, 32, .02)), url('../images/photography/iceland/cover-2400.webp') center 48% / cover; }
+
+.career-intro { padding-block: 32px 34px; }
+.intro-eyebrow { margin: 0 0 12px; color: var(--career-muted); font-size: 12px; }
+h1 { margin: 0; font-size: clamp(20px, 2.2vw, 27px); font-weight: 500; line-height: 1.45; letter-spacing: -.045em; }
+.intro-description { max-width: 680px; margin: 12px 0 14px; font-size: 14px; line-height: 1.75; color: var(--career-muted); }
+.intro-links { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; font-size: 13px; }
+.intro-links a { display: inline-flex; align-items: center; min-height: 34px; overflow-wrap: anywhere; }
+.intro-links span { color: #b1b2b8; }
+
+.career-layout { display: grid; grid-template-columns: 195px minmax(0, 1fr); gap: 64px; padding-top: 26px; padding-bottom: 100px; min-height: 55vh; }
+.career-sections { display: flex; flex-direction: column; align-self: start; position: sticky; top: 94px; gap: 5px; }
+.career-sections a { display: flex; align-items: center; min-height: 44px; font-size: 14px; font-weight: 500; }
+.career-sections a[aria-current] { color: var(--career-blue); }
+.career-content { min-width: 0; }
+.career-section, .subsection, #contact { scroll-margin-top: 100px; }
+.section-title { margin: 0 0 14px; font-size: 18px; font-weight: 600; letter-spacing: -.035em; }
+.section-intro { margin: 0 0 34px; font-size: 14px; line-height: 1.7; color: var(--career-muted); }
+.experience-list { display: grid; gap: 42px; }
+.experience-entry { display: grid; grid-template-columns: 48px minmax(0, 1fr); position: relative; gap: 20px; }
+.organization-mark { display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 10px; font-size: 13px; font-weight: 700; letter-spacing: -.04em; }
+.jump { color: #1c495d; background: #edf4f7; }
+.stripe { color: #635bff; background: #f1efff; font-size: 26px; }
+.cmu { color: #b31b32; background: #fbf0f2; }
+.a37 { color: white; background: #202124; font-size: 15px; }
+.entry-copy { min-width: 0; }
+h3 { margin: 0; font-size: 15px; font-weight: 600; line-height: 1.6; letter-spacing: -.025em; }
+.entry-role { margin: 3px 0 0; color: var(--career-muted); font-size: 13px; line-height: 1.6; }
+.entry-date { grid-column: 2; grid-row: 2; margin: -12px 0 0; color: var(--career-muted); font-size: 12px; line-height: 1.5; }
+.entry-details { margin: 12px 0 0; padding: 0; list-style: none; color: var(--career-muted); font-size: 14px; line-height: 1.8; }
+.entry-details li + li { margin-top: 8px; }
+.work-list { display: grid; gap: 32px; }
+.work-entry + .work-entry { padding-top: 28px; border-top: 1px solid var(--career-border); }
+.work-entry p { color: var(--career-muted); font-size: 14px; line-height: 1.8; margin: 10px 0 0; }
+.work-entry .entry-meta, .entry-meta { color: var(--career-muted); font-size: 12px; line-height: 1.7; }
+.work-entry .technology-list { font-size: 12px; }
+.text-link, .timeline-link { color: var(--career-blue); font-size: 13px; line-height: 2; }
+.text-link { display: inline-block; margin-top: 10px; }
+.text-link:hover, .timeline-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+.subsection { margin-top: 48px; padding-top: 30px; border-top: 1px solid var(--career-border); }
+.subsection > .section-title { margin-bottom: 24px; }
+.publication-heading { display: flex; justify-content: space-between; gap: 24px; }
+.education-header { display: flex; align-items: start; justify-content: space-between; gap: 20px; }
+.education-degree { margin: 6px 0 0; font-size: 14px; color: var(--career-muted); }
+.education-badge { font-size: 12px; color: var(--career-muted); padding-top: 4px; }
+.education-details, .education-honors, .recognition-list { padding-left: 18px; color: var(--career-muted); font-size: 14px; line-height: 1.85; }
+.education-details { margin-top: 22px; }
+.education-details strong { font-weight: 500; color: var(--career-ink); }
+.education-subsection { margin-top: 28px; }
+h4 { font-size: 14px; font-weight: 500; margin: 0 0 12px; }
+.education-honors { margin: 0; }
+.education-honors li + li, .recognition-list li + li { margin-top: 6px; }
+.career-content > .career-section + .career-section:not([hidden]) { margin-top: 64px; }
+.career-page.has-section-navigation .career-content > .career-section { margin-top: 0; }
+
+.career-footer { padding-block: 28px; border-top: 1px solid var(--career-border); }
+.footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; font-size: 12px; color: var(--career-muted); }
+.footer-inner p { margin: 0; }
+.footer-links { display: flex; flex-wrap: wrap; gap: 24px; }
+.footer-links a { display: inline-flex; align-items: center; min-height: 44px; }
+
+@media (min-width: 1380px) {
+  .experience-entry { grid-template-columns: 48px minmax(0, 1fr) 144px; }
+  .entry-date { grid-column: 3; grid-row: 1; margin: 4px 0 0; text-align: right; }
+}
+@media (max-width: 1100px) {
+  .career-frame { width: min(800px, calc(100% - 64px)); }
+  .career-layout { display: block; padding-top: 8px; }
+  .career-sections { flex-direction: row; justify-content: space-between; top: 62px; z-index: 10; padding-block: 6px; margin-bottom: 30px; border-bottom: 1px solid var(--career-border); background: rgba(255, 255, 255, .97); }
+  .career-sections a { font-size: 13px; padding: 10px 6px; border-bottom: 2px solid transparent; }
+  .career-sections a[aria-current] { border-bottom-color: var(--career-blue); }
+  .career-section, .subsection { scroll-margin-top: 140px; }
+}
+@media (max-width: 600px) {
+  .career-frame { width: calc(100% - 40px); }
+  .header-inner { min-height: 56px; gap: 16px; }
+  .portfolio-modes { gap: 16px; font-size: 12px; }
+  .career-name { font-size: 13px; }
+  .career-banner { height: 145px; }
+  .career-intro { padding-block: 26px 22px; }
+  h1 { font-size: 21px; }
+  .desktop-break { display: none; }
+  .intro-description { font-size: 13px; }
+  .career-sections { top: 56px; gap: 0; }
+  .career-sections a { font-size: 11px; text-align: center; justify-content: center; }
+  .career-layout { padding-bottom: 64px; }
+  .section-title { font-size: 17px; }
+  .section-intro { font-size: 13px; margin-bottom: 28px; }
+  .experience-entry { grid-template-columns: 36px minmax(0, 1fr); gap: 14px; }
+  .organization-mark { width: 36px; height: 36px; border-radius: 7px; font-size: 11px; }
+  .stripe { font-size: 23px; }
+  .entry-details, .work-entry p { font-size: 13px; }
+  .education-header { flex-direction: column; gap: 6px; }
+  .education-details, .education-honors, .recognition-list { font-size: 13px; }
+  .footer-inner { align-items: start; flex-direction: column; gap: 10px; }
+  .publication-heading { gap: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; }
+}

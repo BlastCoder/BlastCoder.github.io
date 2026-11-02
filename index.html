@@ -3,96 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Krish Mody | Portfolio</title>
-  <meta name="description" content="Portfolio of Krish Mody - Computer Science & Machine Learning at CMU. Projects, research, resume, and achievements." />
-
+  <title>Krish Mody | Computer Science &amp; Machine Learning</title>
+  <meta name="description" content="Krish Mody — Computer Science and Machine Learning at Carnegie Mellon. Experience, research, selected projects, and education." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/career.css" />
+  <script src="assets/js/career.js" defer></script>
 </head>
-<body>
-  <header class="site-header">
-    <div class="container site-header-inner">
-      <div class="identity-row">
-        <a href="#top" class="site-identity">
-          <span class="site-name">Krish Mody</span>
-          <span class="site-context">Career</span>
-        </a>
-
-        <nav class="mode-switch" aria-label="Portfolio mode">
-          <a href="index.html" class="mode-link" aria-current="page">Career</a>
-          <a href="photography.html" class="mode-link">Photography</a>
-        </nav>
-      </div>
-
-      <nav class="section-nav" aria-label="Career sections">
-        <button
-          class="nav-toggle"
-          type="button"
-          aria-label="Toggle career sections"
-          aria-expanded="false"
-          aria-controls="career-section-links"
-        >
-          <span></span>
-          <span></span>
-        </button>
-        <ul class="nav-links" id="career-section-links">
-          <li><a href="#education">Education</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#research">Research</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#achievements">Achievements</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+<body class="career-page">
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header class="career-header" id="top">
+    <div class="career-frame header-inner">
+      <a class="career-name" href="index.html">Krish Mody</a>
+      <nav class="portfolio-modes" aria-label="Portfolio mode">
+        <a href="index.html" aria-current="page">Career</a>
+        <a href="photography.html">Photography <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </header>
+  <div class="career-banner" aria-hidden="true"></div>
+  <div class="career-frame career-intro">
+    <p class="intro-eyebrow">Carnegie Mellon University</p>
+    <h1>Exploring computer science, machine learning,<br class="desktop-break" /> and quantitative systems.</h1>
+    <p class="intro-description">I'm Krish, a Computer Science undergraduate at Carnegie Mellon. I’m interested in world models, reinforcement learning, ML systems, and building real-world products.</p>
+    <div class="intro-links">
+      <a href="https://www.linkedin.com/in/krish-m51" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      <span aria-hidden="true">/</span>
+      <a href="mailto:krishm2718@gmail.com">krishm2718@gmail.com</a>
+    </div>
+  </div>
+  <main class="career-frame career-layout" id="main-content">
+    <nav class="career-sections" aria-label="Career sections"><a href="#experience" data-section-link="experience">Experience</a><a href="#research" data-section-link="research">Research</a><a href="#projects" data-section-link="projects">Selected Projects</a><a href="#education" data-section-link="education">Education</a></nav>
+    <div class="career-content">
+      <section id="experience" class="career-section" aria-labelledby="experience-title">
+        <h2 id="experience-title" class="section-title">Experience</h2>
+        <p class="section-intro">Research, engineering, and quantitative work.</p>
+        <div class="experience-list"><article class="experience-entry"><span class="organization-mark jump" aria-hidden="true">JT</span><div class="entry-copy"><h3>Jump Trading</h3><p class="entry-role">Quantitative Research Intern</p><ul class="entry-details"><li>Incoming QR at Jump Trading</li></ul></div><p class="entry-date">Incoming</p></article><article class="experience-entry"><span class="organization-mark stripe" aria-hidden="true">S</span><div class="entry-copy"><h3>Stripe</h3><p class="entry-role">Software Engineering Intern</p><ul class="entry-details"><li>Interning on the Risk Signals Platform team</li></ul></div><p class="entry-date">May 2026 - July 2026</p></article><article class="experience-entry"><span class="organization-mark cmu" aria-hidden="true">CMU</span><div class="entry-copy"><h3>Carnegie Mellon University - School of Computer Science</h3><p class="entry-role">Machine Learning Researcher</p><ul class="entry-details"><li>Published first-author paper at NeurIPS 2026</li><li>Designed a novel Sequence Transformer encoding architecture to fix traversal sensitivity for serialized graphs, achieved 99% stability</li><li>Outperformed GNNs by 12% and standard RoPE-based sequence transformers by 39% on downstream graph property prediction tasks</li><li>Advised by Professor Sridhar Radhakrishnan</li></ul></div><p class="entry-date">August 2025 - Present</p></article><article class="experience-entry"><span class="organization-mark cmu" aria-hidden="true">CMU</span><div class="entry-copy"><h3>Carnegie Mellon University - Language Technologies Institute</h3><p class="entry-role">Machine Learning Researcher</p><ul class="entry-details"><li>Developed generative VLMs for language-conditioned video generation for NFL simulation, achieving 98% next-frame accuracy</li><li>Designed multimodal contrastive fine-tuning, combined with on-policy teacher distillation to achieve 90% similarity recall</li><li>Built a video-token compressor with spatial query initialization, reducing tokens by 144x and increasing F1 score by 4%</li><li>Advised by Professor Chenyan Xiong</li></ul></div><p class="entry-date">August 2025 - Present</p></article><article class="experience-entry"><span class="organization-mark a37" aria-hidden="true">a37</span><div class="entry-copy"><h3>a37</h3><p class="entry-role">Member of Technical Staff</p><ul class="entry-details"><li>Developed reinforcement learning and LLM agents for startup backed by Greylock VC.</li><li>Designed novel Markov adaptive-iterative retrieval architecture, utilizing hybrid dense-sparse vector spaces to maximize semantic information gain within complex repositories, achieving 98% accuracy with ~2 sec latency.</li></ul></div><p class="entry-date">May 2025 - July 2025</p></article><article class="experience-entry"><span class="organization-mark cmu" aria-hidden="true">CMR</span><div class="entry-copy"><h3>Carnegie Mellon Racing - Autonomous Vehicles</h3><p class="entry-role">Machine Learning Engineer</p><ul class="entry-details"><li>Designed path planning machine learning software for autonomous robots using LiDAR data.</li><li>Built low-level SVM midline detection algorithm in C++, improving execution speed by 30% on embedded systems hardware.</li><li>Accelerated model performance by 10x via multi-threaded binary search in C.</li></ul></div><p class="entry-date">August 2024 - Present</p></article></div>
+      </section>
+      <section id="research" class="career-section" aria-labelledby="research-title">
+        <h2 id="research-title" class="section-title">Research</h2>
+        <p class="section-intro">Transformers, generative modeling, and autonomous systems.</p>
+        <div class="work-list"><article class="work-entry"><h3>Traversal-Invariant Encoding Architecture for Sequence Transformers</h3><p class="entry-meta">Transformers · Graph LMs · Generative Modeling</p><p>
+                Designed a novel Transformer encoding architecture to reduce traversal sensitivity
+                in serialized graphs, achieving 99% stability. Outperformed GNNs by 12% and standard 
+                RoPE-based sequence transformers by 39% on downstream graph property prediction tasks.
+                Published to NeurIPS 2026.
+              </p></article><article class="work-entry"><h3>Generative Vision-Language Models for NFL Simulation</h3><p class="entry-meta">Computer Vision · RL · World Models</p><p>
+                Created a 7B-parameter VLM integrating video, player tracking, and event text for 
+                language-conditioned video generation and next-event classification, achieving 95% 
+                classification accuracy. Developed contrastive learning fine-tuning objective, 
+                combined with on-policy teacher distillation to achieve 90% recall on play similarity 
+                retrieval. Built a video-token compressor with spatial query initialization, reducing 
+                tokens by 144x.
+              </p></article><article class="work-entry"><h3>Entropy-Guided NLP Tokenization Algorithms for Molecular Representations</h3><p class="entry-meta">Machine Learning · Generative Modeling</p><p>
+                Designed a novel NLP algorithm for molecular tokenization for generative drug discovery.
+                Built a probabilistic entropy-guided domain-aware tokenization algorithm for molecular 
+                LLMs. Achieved 50% improvement in compression ratio and entropy over SOTA (APE), and 
+                improved downstream clustering accuracy by 30%.
 
-  <main id="top">
-
-    <!-- HERO SECTION (unchanged) -->
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <p class="eyebrow">Computer Science · Machine Learning · Quant Trader</p>
-          <h1>Hi, I'm <span class="accent">Krish</span>.</h1>
-          <p class="hero-subtitle">
-            I'm an undergraduate at Carnegie Mellon studying Computer Science & Machine Learning.
-            I am excited about the intersection of real-world startup products and flow-based 
-            world models and RL (including ML systems for improved RL training and inference). 
-          </p>
-          <div class="hero-actions">
-            <a href="#research" class="btn primary">View Research</a>
-          </div>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/41484928/" target="_blank" rel="noopener noreferrer" class="timeline-link"> Link to Paper </a>
+              </p></article><article class="work-entry"><h3>Autonomous Racing & Trajectory Optimization</h3><p class="entry-meta">Reinforcement Learning · Control · Optimization</p><p>
+                Developing PPO-based global race-line planners for autonomous racing. Built SVM-based
+                boundary detection algorithms to compute localized midline of a sector with ultra-high
+                inference for embedded systems.
+              </p></article></div>
+        <div id="publications" class="subsection">
+          <h2 class="section-title">Publications</h2>
+          <div class="work-list"><article class="work-entry"><div class="publication-heading"><h3>Traversal-Invariant Encoding Architecture for Sequence Transformers</h3><span class="entry-meta">2025</span></div><p class="entry-meta">Krish Mody, Sridhar Radhakrishnan, et al.</p><p>Designed a novel Transformer encoding architecture to reduce traversal sensitivity in serialized graphs, achieving 99% stability.</p></article><article class="work-entry"><div class="publication-heading"><h3>Optimizing SMILES token sequences via trie-based refinement and transition graph filtering</h3><span class="entry-meta">2025</span></div><p class="entry-meta">Sridhar Radhakrishnan, Krish Mody, et al.</p><p>Designed new tokenization method for molecular representations utilizing entropy-guided graph filtering, improving compression ratio over SOTA while boosting downstream clustering accuracy</p><a class="text-link" href="https://pubmed.ncbi.nlm.nih.gov/41484928/" target="_blank" rel="noopener noreferrer">View publication ↗</a></article></div>
         </div>
-
-        <div class="hero-card">
-          <div class="hero-card-inner">
-            <h2>Snapshot</h2>
-            <ul>
-              <li><strong>School:</strong> Carnegie Mellon University</li>
-              <li><strong>Major:</strong> Computer Science</li>
-              <li><strong>ML Focus:</strong> World Models, VLAs / VLMs, Robotics, ML Systems, RL</li>
-            </ul>
-          </div>
-        </div>
-
-
-      </div>
-    </section>
-
-    <!-- EDUCATION SECTION -->
-    <section id="education" class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2>Education</h2>
-        </div>
-
-        <div class="education-layout">
-          <article class="education-card">
+      </section>
+      <section id="projects" class="career-section" aria-labelledby="projects-title">
+        <h2 id="projects-title" class="section-title">Selected Projects</h2>
+        <p class="section-intro">Applied machine learning and products built from end to end.</p>
+        <div class="work-list"><article class="work-entry"><h3>Smart Carpool</h3><p class="entry-role">Intelligent School Carpooling System</p><p>Built YOLOv8 computer vision detection model with 87% accuracy. Integrated with Bi-LSTM vision-language model at low-latency to recognize guardian identity instantaneously. Architected Google Firebase infrastructure for real-time synchronization. Designed intuitive front-end iOS app in Swift. Won National Congressional App Challenge.</p><p class="technology-list">PyTorch · YOLOv8 · Swift · Firebase</p></article><article class="work-entry"><h3>InsurAI</h3><p class="entry-role">AI Financial Healthcare Platform</p><p>Developed gradient-boosted insurance models and CNN-based facial analysis. Packaged into an iOS app with SwiftUI + Apple Maps. Won HackCMU 2024 (HRT track).</p><p class="technology-list">XGBoost · PyTorch · SwiftUI · Swift · Apple Maps API</p></article><article class="work-entry"><h3>ProspectIQ</h3><p class="entry-role">AI Investor Outreach Platform</p><p>Full-stack app using React + Flask to automate investor outreach using Gmail API + OpenAI API. Built JSON-based caching to store profiles and communication history.</p><p class="technology-list">React · Flask · Python · REST API · OpenAI API</p></article><article class="work-entry"><h3>Sentinel</h3><p class="entry-role">AI Financial &amp; Risk Detection Platform</p><p>Full-stack autopilot financial platform integrated with Plaid and Supabase to analyze and detect high security risk signals. Built ML-powered transaction risk scoring pipeline to surface suspicious fraud signals. Built end-to-end from data ingestion (Plaid) to decisioning layer (OpenAI API) to persistent storage (Supabase) for real-time transaction ingestion and anomaly learning.</p><p class="technology-list">React · Flask · Python · Supabase · Next.JS · Plaid API · OpenAI API</p></article></div>
+      </section>
+      <section id="education" class="career-section" aria-labelledby="education-title">
+        <h2 id="education-title" class="section-title">Education</h2>
+        <div class="education-content">
             <div class="education-header">
               <div>
                 <h3>Carnegie Mellon University</h3>
@@ -122,468 +110,16 @@
                 <li>Won 1st at HackCMU in Hudson River Trading track</li>
               </ul>
             </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE SECTION (NEW) -->
-    <section id="experience" class="section alt">
-      <div class="container">
-        <div class="section-header">
-          <h2>Experience</h2>
-        </div>
-
-        <div class="exp-wrapper">
-
-
-          <!-- Experience Item 1 -->
-          <div class="exp-entry">
-            <div class="exp-marker"></div>
-
-            <div class="exp-card">
-              <div class="exp-header">
-                <h3>Quantitative Research Intern</h3>
-                <span class="exp-date">Incoming</span>
-              </div>
-
-              <a href="https://cmu.edu" target="_blank" class="exp-company">
-                Jump Trading
-              </a>
-
-              <ul class="exp-desc">
-                <li>Incoming QR at Jump Trading</li>
-              </ul>
-            </div>
           </div>
-
-          <!-- Experience Item 1 -->
-          <div class="exp-entry">
-            <div class="exp-marker"></div>
-
-            <div class="exp-card">
-              <div class="exp-header">
-                <h3>Software Engineering Intern</h3>
-                <span class="exp-date">May 2026 - July 2026</span>
-              </div>
-
-              <a href="https://cmu.edu" target="_blank" class="exp-company">
-                Stripe
-              </a>
-
-              <ul class="exp-desc">
-                <li>Interning on the Risk Signals Platform team</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Experience Item 1 -->
-          <div class="exp-entry">
-            <div class="exp-marker"></div>
-
-            <div class="exp-card">
-              <div class="exp-header">
-                <h3>Machine Learning Reseacher</h3>
-                <span class="exp-date">August 2025 - Present</span>
-              </div>
-
-              <a href="https://cmu.edu" target="_blank" class="exp-company">
-                Carnegie Mellon University - School of Computer Science
-              </a>
-
-              <ul class="exp-desc">
-                <li>Published first-author paper at NeurIPS 2026</li>
-                <li>Designed a novel Sequence Transformer encoding architecture to fix traversal sensitivity for serialized graphs, achieved 99% stability</li>
-                <li>Outperformed GNNs by 12% and standard RoPE-based sequence transformers by 39% on downstream graph property prediction tasks</li>
-                <li>Advised by Professor Sridhar Radhakrishnan</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Experience Item 1 -->
-          <div class="exp-entry">
-            <div class="exp-marker"></div>
-
-            <div class="exp-card">
-              <div class="exp-header">
-                <h3>Machine Learning Reseacher</h3>
-                <span class="exp-date">August 2025 - Present</span>
-              </div>
-
-              <a href="https://cmu.edu" target="_blank" class="exp-company">
-                Carnegie Mellon University - Language Technologies Institute
-              </a>
-
-              <ul class="exp-desc">
-                <li>Developed generative VLMs for language-conditioned video generation for NFL simulation, achieving 98% next-frame accuracy</li>
-                <li>Designed multimodal contrastive fine-tuning, combined with on-policy teacher distillation to achieve 90% similarity recall</li>
-                <li>Built a video-token compressor with spatial query initialization, reducing tokens by 144x and increasing F1 score by 4%</li>
-                <li>Advised by Professor Chenyan Xiong</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Experience Item 2 -->
-          <div class="exp-entry">
-            <div class="exp-marker"></div>
-
-            <div class="exp-card">
-              <div class="exp-header">
-                <h3>Member of Technical Staff</h3>
-                <span class="exp-date">May 2025 - July 2025</span>
-              </div>
-
-              <a href="https://shopify.com" target="_blank" class="exp-company">a37</a>
-
-              <ul class="exp-desc">
-                <li>Developed reinforcement learning and LLM agents for startup backed by Greylock VC.</li>
-                <li>Designed novel Markov adpative-iterative retrieval architecture, utilizing hybrid
-                dense-sparse vector spaces to maximize semantic information gain within complex
-                repositories, achieving 98% accuracy with ~2 sec latency.</li>
-                </ul>
-            </div>
-          </div>
-
-
-
-
-
-          <!-- Experience Item 4 -->
-          <div class="exp-entry">
-            <div class="exp-marker"></div>
-
-            <div class="exp-card">
-              <div class="exp-header">
-                <h3>Machine Learning Engineer</h3>
-                <span class="exp-date">August 2024 - Present</span>
-              </div>
-
-              <a href="https://cmu.edu" target="_blank" class="exp-company">
-                Carnegie Mellon Racing - Autonomous Vehicles
-              </a>
-
-              <ul class="exp-desc">
-                <li>Designed path planning machine learning software for autonomous robots using LiDAR data.</li>
-                <li>Built low-level SVM midline detection algorithm in C++, improving execution speed by 30%
-                  on embedded systems hardware.</li> 
-                <li>Accelerated model performance by 10x via multi-threaded binary search in C.</li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-          <section id="research" class="section">
-        <div class="container">
-          <div class="section-header">
-            <h2>Research</h2>
-            <p>Research directions and work in progress.</p>
-          </div>
-      
-          <div class="timeline">
-      
-
-            <!-- Research Item 2 -->
-            <article class="timeline-item">
-              <h3>Traversal-Invariant Encoding Architecture for Sequence Transformers</h3>
-              <p class="timeline-meta">Transformers · Graph LMs · Generative Modeling</p>
-              <p>
-                Designed a novel Transformer encoding architecture to reduce traversal sensitivity
-                in serialized graphs, achieving 99% stability. Outperformed GNNs by 12% and standard 
-                RoPE-based sequence transformers by 39% on downstream graph property prediction tasks.
-                Published to NeurIPS 2026.
-              </p>
-            </article>
-
-
-            <!-- Research Item 3 -->
-            <article class="timeline-item">
-              <h3>Generative Vision-Language Models for NFL Simulation</h3>
-              <p class="timeline-meta">Computer Vision · RL · World Models</p>
-              <p>
-                Created a 7B-parameter VLM integrating video, player tracking, and event text for 
-                language-conditioned video generation and next-event classification, achieving 95% 
-                classification accuracy. Developed contrastive learning fine-tuning objective, 
-                combined with on-policy teacher distillation to achieve 90% recall on play similarity 
-                retrieval. Built a video-token compressor with spatial query initialization, reducing 
-                tokens by 144x.
-              </p>
-            </article>
-
-                        <!-- Research Item 1 -->
-            <article class="timeline-item">
-              <h3>Entropy-Guided NLP Tokenization Algorithms for Molecular Representations</h3>
-              <p class="timeline-meta">Machine Learning · Generative Modeling</p>
-              <p>
-                Designed a novel NLP algorithm for molecular tokenization for generative drug discovery.
-                Built a probabilistic entropy-guided domain-aware tokenization algorithm for molecular 
-                LLMs. Achieved 50% improvement in compression ratio and entropy over SOTA (APE), and 
-                improved downstream clustering accuracy by 30%.
-
-                <a href="https://pubmed.ncbi.nlm.nih.gov/41484928/" target="_blank" class="timeline-link"> Link to Paper </a>
-              </p>
-            </article>
-      
-
-            <!-- Research Item 4 -->
-            <article class="timeline-item">
-              <h3>Autonomous Racing & Trajectory Optimization</h3>
-              <p class="timeline-meta">Reinforcement Learning · Control · Optimization</p>
-              <p>
-                Developing PPO-based global race-line planners for autonomous racing. Built SVM-based
-                boundary detection algorithms to compute localized midline of a sector with ultra-high
-                inference for embedded systems.
-              </p>
-            </article>
-            
-      
-          </div>
-        </div>
+        <div id="achievements" class="subsection"><h2 class="section-title">Recognition</h2><ul class="recognition-list"><li>USAMO &amp; USNCO national qualifier</li><li>Selected to Jane Street&#x27;s QT Program</li><li>Qualified for National Congressional App Challenge</li></ul></div>
       </section>
-
-      <section id="publications" class="section">
-        <div class="container">
-          <div class="section-header">
-            <h2>Publications</h2>
-            <p>Selected papers.</p>
-          </div>
-
-          <div class="publication-list">
-            <article class="publication-card">
-              <div class="publication-header">
-                <div>
-                  <p class="publication-status">Published</p>
-                  <h3>Traversal-Invariant Encoding Architecture for Sequence Transformers</h3>
-                </div>
-                <span class="publication-year">2025</span>
-              </div>
-              <p class="publication-meta">
-                Krish Mody, Sridhar Radhakrishnan, et al.
-              </p>
-              <p class="publication-summary">
-                Designed a novel Transformer encoding architecture to reduce traversal sensitivity
-                in serialized graphs, achieving 99% stability.
-              </p>
-              <a
-                href=""
-                target="_blank"
-                rel="noopener"
-                class="publication-link"
-              >
-                View publication
-              </a>
-            </article>
-          </div>
-
-
-          <div class="publication-list">
-            <article class="publication-card">
-              <div class="publication-header">
-                <div>
-                  <p class="publication-status">Published</p>
-                  <h3>Optimizing SMILES token sequences via trie-based refinement and transition graph filtering</h3>
-                </div>
-                <span class="publication-year">2025</span>
-              </div>
-              <p class="publication-meta">
-                Sridhar Radhakrishnan, Krish Mody, et al.
-              </p>
-              <p class="publication-summary">
-                Designed new tokenization method for molecular representations utilizing entropy-guided graph
-                filtering, improving compression ratio over SOTA while boosting downstream clustering accuracy
-              </p>
-              <a
-                href="https://pubmed.ncbi.nlm.nih.gov/41484928/"
-                target="_blank"
-                rel="noopener"
-                class="publication-link"
-              >
-                View publication
-              </a>
-            </article>
-          </div>
-
-
-        </div>
-      </section>
-
-
-    <section id="projects" class="section alt">
-        <div class="container">
-          <div class="section-header">
-            <h2>Projects</h2>
-            <p>Selected projects.</p>
-          </div>
-      
-          <div class="card-grid">
-      
-            <!-- Project 1 -->
-            <article class="card">
-              <div class="card-body">
-                <h3>Smart Carpool</h3>
-                <p class="card-tagline">Intelligent School Carpooling System</p>
-                <p class="card-text">
-                  Built YOLOv8 computer vision detection model with 87% accuracy. Integrated with Bi-LSTM 
-                  vision-language model at low-latency to recognize guardian identity instantaneously.
-                  Architected Google Firebase infrastructure for real-time synchronization. Designed intuitive
-                  front-end iOS app in Swift. Won National Congressional App Challenge.
-                </p>
-                <ul class="tag-list">
-                  <li>PyTorch</li>
-                  <li>YOLOv8</li>
-                  <li>Swift</li>
-                  <li>Firebase</li>
-                </ul>
-              </div>
-              <div class="card-footer">
-                <a href="https://github.com/your-username/smart-carpool"
-                   target="_blank" rel="noopener" class="card-link">View on GitHub</a>
-              </div>
-            </article>
-    
-      
-            <!-- Project 2 -->
-            <article class="card">
-              <div class="card-body">
-                <h3>InsurAI</h3>
-                <p class="card-tagline">AI Financial Healthcare Platform</p>
-                <p class="card-text">
-                  Developed gradient-boosted insurance models and CNN-based facial analysis. Packaged into
-                  an iOS app with SwiftUI + Apple Maps. Won HackCMU 2024 (HRT track).
-                </p>
-                <ul class="tag-list">
-                  <li>XGBoost</li>
-                  <li>PyTorch</li>
-                  <li>SwiftUI</li>
-                  <li>Swift</li>
-                  <li>Apple Maps API</li>
-                </ul>
-              </div>
-              <div class="card-footer">
-                <a href="https://github.com/your-username/insurai"
-                   target="_blank" rel="noopener" class="card-link">View on GitHub</a>
-              </div>
-            </article>
-      
-            <!-- Project 3 -->
-            <article class="card">
-              <div class="card-body">
-                <h3>ProspectIQ</h3>
-                <p class="card-tagline">AI Investor Outreach Platform</p>
-                <p class="card-text">
-                  Full-stack app using React + Flask to automate investor outreach using Gmail API + OpenAI API.
-                  Built JSON-based caching to store profiles and communication history.
-                </p>
-                <ul class="tag-list">
-                  <li>React</li>
-                  <li>Flask</li>
-                  <li>Python</li>
-                  <li>REST API</li>
-                  <li>OpenAI API</li>
-                </ul>
-              </div>
-            </article>
-
-            <!-- Project 4 -->
-            <article class="card">
-              <div class="card-body">
-                <h3>Sentinel</h3>
-                <p class="card-tagline">AI Financial & Risk Detection Platform</p>
-                <p class="card-text">
-                  Full-stack autopilot financial platform integrated with Plaid and Supabase to analyze and 
-                  detect high security risk signals. Built ML-powered transaction risk scoring pipeline
-                  to surface suspicious fraud signals. Built end-to-end from data ingestion (Plaid) to 
-                  decisioning layer (OpenAI API) to persistent storage (Supabase) for real-time transaction
-                  ingestion adn anomaly learning.
-                </p>
-                <ul class="tag-list">
-                  <li>React</li>
-                  <li>Flask</li>
-                  <li>Python</li>
-                  <li>Supabase</li>
-                  <li>Next.JS</li>
-                  <li>Plaid API</li>
-                  <li>OpenAI API</li>
-                </ul>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-      
-      
-      
-
-    
-      <section id="achievements" class="section alt">
-        <div class="container">
-          <div class="section-header">
-            <h2>Achievements</h2>
-            <p>Some milestones and recognitions.</p>
-          </div>
-      
-          <div class="achievement-grid">
-      
-            <!-- Category 1 -->
-            <div class="achievement-card">
-              <h3>Academic & Competitions</h3>
-              <ul>
-                <li>USAMO & USNCO national qualifier</li>
-                <li>ARML Top 25 National Ranking</li>
-                <li>Selected to Jane Street's QT Program</li>
-              </ul>
-            </div>
-      
-            <!-- Category 2 -->
-            <div class="achievement-card">
-              <h3>Hackathons</h3>
-              <ul>
-                <li>Qualified for National Congressional App Challenge</li>
-                <li>Won 1st at HackCMU in Hudson River Trading track</li>
-              </ul>
-            </div>
-      
-          </div>
-        </div>
-      </section>
-      
-    <!-- Contact -->
-    <section id="contact" class="section alt">
-      <div class="container">
-        <div class="section-header">
-          <h2>Contact</h2>
-          <p>Best ways to reach me.</p>
-        </div>
-        <div class="grid two-col">
-          <div>
-            <p>
-              I’m always interested in learning about new research directions, ambitious projects,
-              and technically deep teams.
-            </p>
-            <p>
-              The fastest way to reach me is by email, but I check LinkedIn regularly as well.
-            </p>
-          </div>
-          <div>
-            <ul class="contact-list">
-              <li><strong>Email:</strong> <a href="mailto:youremail@andrew.cmu.edu">krishm2718@gmail.com</a></li>
-              <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/krish-m51" target="_blank" rel="noopener">linkedin.com/in/krish-m51</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
   </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <span>&copy; <span id="year"></span> Krish Mody. All rights reserved.</span>
-      <span class="footer-meta">Built with focus on clarity, not clutter.</span>
+  <footer class="career-footer" id="contact">
+    <div class="career-frame footer-inner">
+      <div class="footer-links"><a href="mailto:krishm2718@gmail.com">Email</a><a href="https://www.linkedin.com/in/krish-m51" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="photography.html">Photography ↗</a></div>
+      <p>© <span id="year">2026</span> Krish Mody</p>
     </div>
   </footer>
-
-  <script src="assets/js/main.js"></script>
 </body>
 </html>
